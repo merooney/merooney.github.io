@@ -1,0 +1,286 @@
+html {
+	height: 101%
+}
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	color: #575D63;
+}
+
+/* Typography */
+
+h1 {
+	margin: 5px 0 0 0;
+	font-size: 28px;
+}
+
+h2 {
+	margin: 0;
+	font-size: 18px;
+	text-decoration: underline;
+}
+
+h3 {
+	margin: 0;
+	font-size: 14px;
+	font-style: italic;
+}
+
+hr {
+	border: 0;
+	background-color: #999;
+	height: 1px;
+}
+
+p{
+	margin-top: .5em;
+	margin-bottom: .5em;
+	padding-right: 1em;
+}
+
+.flex-content blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #73c990;
+  margin: 1.5em 15px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.flex-content blockquote:before {
+  color: #73c990;
+  content: open-quote;
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.flex-content blockquote:after {
+  color: #73c990;
+  content: close-quote;
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.flex-content blockquote p {
+  display: inline;
+}
+
+/* Container div style */
+
+#page {
+	width: 1000px;
+	margin: auto;
+	margin-top: 3vh;
+}
+
+/* Nav column layout */
+
+#nav_toggle {
+	display: none;
+}
+
+nav {
+	width: 200px;
+	position: fixed;
+  max-height: 94%;
+  overflow-y: auto;
+}
+
+nav ul {
+	list-style-type: none;
+	margin-top: 2vh;
+}
+
+nav li {
+	position: relative;
+	left: -40px;
+	padding: 3px;
+	margin-top: 2px;
+	cursor: default;
+}
+
+nav li.selected {
+  background: #575D63;
+  color: #73c990;
+  margin-right: .8em;
+}
+nav li.selected:after {
+  content: "";
+  color: #575D63;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: transparent;
+  /* half the box height = half the line of text + (padding + margin) top & bottom */
+  border-top:    calc(.5em + 3px + 2px) solid transparent;
+  border-bottom: calc(.5em + 3px + 2px) solid transparent;
+  border-left: .6em solid #575D63;
+}
+
+nav a {
+	color: #111;
+	text-decoration: none;
+}
+
+nav li a {
+	display: block;
+}
+
+nav blockquote {
+	margin-left: 0;
+  font-size: 14px;
+	padding: 5px 5px 8px 5px;
+	background: #C3D6FB;
+	border-color: #babdbb;
+  overflow: hidden;
+}
+
+/* Glyphicon line */
+.glyph-line {
+	text-align: center;
+	font-size: 18px;
+}
+
+.glyph-line a{
+	display: inline;
+}
+
+/* Content column layout */
+
+main {
+	width: 800px;
+	float: right;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 97vh;
+}
+
+.flex-content {
+  flex: 1;
+}
+
+article .important {
+	background: #FFAAAA;
+	border: 1px solid #BB4444;
+}
+
+article img {
+	display: block;
+	margin: auto;
+}
+
+article a {
+	color: black;
+	text-decoration: none;
+	border-bottom: 1px dotted black;
+}
+
+article a:hover {
+	border-bottom: 1px solid black;
+}
+
+/* Article layout */
+
+header {
+	position: relative;
+	padding-top: 1em;
+	padding-bottom: 0;
+	margin-top: .5em;
+}
+
+ul.posts ul {
+	list-style-type: square;
+	background: #f9f9f9;
+	border-left: 5px solid #73c990;
+	margin: 1.5em 15px;
+	padding: 0.5em 25px;
+}
+
+.post-meta {
+	position: absolute;
+	top: 0;
+	margin-bottom: 0;
+}
+
+.post-tags {
+	display: inline-block;
+	font-variant: small-caps;
+	margin-left: 1em;
+	vertical-align: 1px;
+}
+
+.post-time {
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.posts {
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+ul.posts > li:not(:last-child) {
+	border-bottom: 1px dotted #babdbb;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+}
+
+/* Code layout */
+article > pre {
+	white-space: pre;
+	display: block;
+	color: #dcdcdc;
+}
+
+article > pre > code {
+	display: block;
+	padding: 12px;
+	border: 1px solid #3f3f3f;
+	background: #3f3f3f;
+	border-radius: 3px;
+	box-shadow: 0 0 5px black;
+}
+
+/* Footer always at bottom of page, spanning the width of the main container*/
+
+.flex-footer {
+  height: 5vh;
+  border-width: 5px;
+  border-top: inset;
+  border-color: #73c990;
+  text-align: center;
+}
+
+/* Expandable nav bar menus */
+li .menu_label + input[type=checkbox] {
+	display: none;
+	}
+
+li .menu_label {
+	cursor: pointer;
+}
+
+li .menu_label + input[type=checkbox] + ol > li {
+	display: none;
+}
+
+li .menu_label + input[type=checkbox]:checked + ol > li {
+	display: block;
+}
+
+.topic-headers {
+	font-size: 12px;
+}
+
+.tiny-links {
+	font-size: 10px;
+}

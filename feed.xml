@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<rss version = "2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>Mr. Mundane's musings</title>
+    <link>http://mikerooney.me</link>
+    <description>Online weblog of Mike Rooney</description>
+    <atom:link href="http://mikerooney.me/feed.xml" rel="self" type="application/rss+xml" />
+        <item>
+            <title>Mathjax and code-highlighting test</title>
+            <author>Mike Rooney</author>
+            <description>The Gamma function satisfying \(\Gamma(n) = (n-1)!\quad\forall&#10;n\in\mathbb N\) is via through the Euler integral&#10;$$&#10;\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.&#10;$$</description>
+            <pubDate>17 March 2015</pubDate>
+            <link>http://mikerooney.me/articles/2015-03-18-Code-highlighting-Mathjax</link>
+            <guid isPermaLink="true">http://mikerooney.me/articles/2015-03-18-Code-highlighting-Mathjax</guid>
+        </item>
+        <item>
+            <title>Design is a distracting hobby</title>
+            <author>Mike Rooney</author>
+            <description>This post warrants a disclaimer: I have never once considered myself a designer; I have only the smallest quantity of &#34;artistic taste&#34;. This is said so as to dispel any presumptuous airs that may stink up what I am about to say.&#10;I have never had much occasion to think about visual design before this...</description>
+            <pubDate>25 February 2015</pubDate>
+            <link>http://mikerooney.me/articles/2015-02-26-Design-is-a-distracting-hobby</link>
+            <guid isPermaLink="true">http://mikerooney.me/articles/2015-02-26-Design-is-a-distracting-hobby</guid>
+        </item>
+        <item>
+            <title>A blogging alter ego is born... Mr. Mundane</title>
+            <author>Mike Rooney</author>
+            <description>Why am I going through the trouble of establishing a personal website? I asked myself this question many times over as I perused listings of today&#39;s most popular static site generators. Despite the likelihood my current enthusiasm will shrivel, and the rate of updates will become a dribble, I just...</description>
+            <pubDate>24 February 2015</pubDate>
+            <link>http://mikerooney.me/articles/2015-02-25-Mr-Mundane's-Musings</link>
+            <guid isPermaLink="true">http://mikerooney.me/articles/2015-02-25-Mr-Mundane's-Musings</guid>
+        </item>
+</channel>
+</rss>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>MikeRooney.Blog(v1)</title>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/styles/normalize.css">
+		<link rel="stylesheet" href="/styles/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+		<link rel="shortcut icon" href="/images/favicon.ico">
+		<link rel="stylesheet" href="/styles/mobile.css" media="screen and (max-width: 1024px)">
+		<link rel="stylesheet" href="/styles/zenburn-code.css">
+		<link rel='stylesheet' href='/styles/font_rooney.css' />
+	</head>
+	<body>
+		<!-- Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M4CQ8F"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-M4CQ8F');</script>
+		<!-- End Google Tag Manager -->
+		<div id="page">
+			<input type="checkbox" id="nav_toggle" />
+			<nav id="main-nav">
+				<label for="nav_toggle" data-open="&#8803;" data-close="&#x2715;"></label>
+				<ul>
+						<li id="logo"><object data="/images/mrMundane.svg" width="150" height="150" type="image/svg+xml"></object></li>
+						<li class="glyph-line">
+							<a href="https://github.com/merooney">
+								<i class="icon-github"></i>
+							</a>
+							<a href="http://stackoverflow.com/users/2581833/mr-mundane">
+								<i class="icon-stackoverflow"></i>
+							</a>
+							<a href="https://plus.google.com/u/0/107429329825367058186/about">
+								<i class="icon-gplus"></i>
+							</a>
+							<a href="/feed.xml">
+								<i class="icon-rss"></i>
+							</a>
+						</li>
+						<li class="selected"><i class="icon-home"></i>Home</li>
+						<li><a href="/projects/"><i class="icon-keyboard"></i>Projects</li>
+						<li><a href="/journals/"><i class="icon-book"></i>Journals</a></li>
+						<li><a href="/archive/"><i class="icon-folder"></i>Archive</a></li>
+						<li><a href="/about/"><i class="icon-help"></i>About</a></li>
+					<!-- Cool stuff -->
+						<li class="cool-links">
+							<label class="menu_label" for="cool-stuff">Cool Stuff <i class="icon-down-open"></i></label>
+							<input type="checkbox" id="cool-stuff" />
+							<ol class="topic-headers">
+								<li>
+									<label for="graphics" class="menu_label">Graphics <i class="icon-right-open"></i></label>
+									<input type="checkbox" id="graphics" />
+									<ol class="tiny-links">
+										<li class="page"><a href="http://graphicscodex.com/">&raquo; Graphics Codex</a></li>
+									  <li class="page"><a href="http://jcgt.org/index.html?reload=1">&raquo; CG Tech journal</a></li>
+									  <li class="page"><a href="http://www.realtimerendering.com/">&raquo; RT rendering</a></li>
+									  <li class="page"><a href="http://threejs.org/">&raquo; Three.js</a></li>
+									  <li class="page"><a href="http://www.ogre3d.org/">&raquo; Ogre3D</a></li>
+									  <li class="page"><a href="http://verbnurbs.com/">&raquo; Verb Nurbs</a></li>
+									  <li class="page"><a href="http://www.blender.org/">&raquo; Blender3D</a></li>
+									  <li class="page"><a href="http://cscheid.net/">&raquo; Carlos Scheidegger</a></li>
+									  <li class="page"><a href="https://grabcad.com/">&raquo; GrabCAD</a></li>
+									  <li class="page"><a href="http://blog.hvidtfeldts.net/">&raquo; Syntopia</a></li>
+									  <li class="page"><a href="http://www.cs.cornell.edu/Courses/cs6630/2012sp/nori/">&raquo; Nori renderer</a></li>
+									  <li class="page"><a href="http://www.floored.com/">&raquo; Floored</a></li>
+									  <li class="page"><a href="http://www.thingiverse.com/">&raquo; Thingiverse</a></li>
+									  <li class="page"><a href="http://www.fxguide.com/">&raquo; FXguide</a></li>
+									  <li class="page"><a href="http://donw.org/b/?d=TinyBlog">&raquo; Don Williamson</a></li>
+									  <li class="page"><a href="http://procworld.blogspot.com/">&raquo; Procedural World</a></li>
+									  <li class="page"><a href="http://www.mitsuba-renderer.org/">&raquo; Mitsuba</a></li>
+									  <li class="page"><a href="http://www.openscad.org/">&raquo; OpenSCAD</a></li>
+									  <li class="page"><a href="http://c0de517e.blogspot.com/">&raquo; c0de517e</a></li>
+									  <li class="page"><a href="http://www.terathon.com/index.php">&raquo; C4 engine</a></li>
+									  <li class="page"><a href="http://timothylottes.blogspot.com/">&raquo; Timothy Lottes</a></li>
+									</ol>
+								</li>
+								<li>
+									<label for="coding" class="menu_label">Coding <i class="icon-right-open"></i></label>
+									<input type="checkbox" id="coding" />
+									<ol class="tiny-links">
+										<li class="page"><a href="http://zeromq.org/">&raquo; ZeroMQ</a></li>
+									  <li class="page"><a href="http://eli.thegreenplace.net/">&raquo; Eli Bendersky</a></li>
+									  <li class="page"><a href="http://www.ros.org/">&raquo; ROS</a></li>
+									  <li class="page"><a href="http://gnuradio.org/redmine/">&raquo; GNU rado</a></li>
+									  <li class="page"><a href="http://web.engr.illinois.edu/~jeffe/teaching/algorithms/">&raquo; Algorithms</a></li>
+									  <li class="page"><a href="http://www.jjj.de/fxt/#fxtbook">&raquo; FXT numerical algo</a></li>
+									  <li class="page"><a href="http://web.mit.edu/hyperbook/Patrikalakis-Maekawa-Cho/">&raquo; Shape interrogation</a></li>
+									  <li class="page"><a href="http://blog.acolyer.org/">&raquo; Morning Paper</a></li>
+									  <li class="page"><a href="http://highscalability.squarespace.com/">&raquo; High Scalability</a></li>
+									  <li class="page"><a href="https://media.defcon.org/">&raquo; DefCon talks</a></li>
+									  <li class="page"><a href="http://the-paper-trail.org/blog/distributed-systems-theory-for-the-distributed-systems-engineer/">&raquo; Dis. Sys. Theory</a></li>
+									</ol>
+								</li>
+								<li>
+									<label for="electronics" class="menu_label">Electronics <i class="icon-right-open"></i></label>
+									<input type="checkbox" id="electronics" />
+									<ol class="tiny-links">
+										<li class="page"><a href="http://www.bunniestudios.com/">&raquo; Bunnie's Blog</a></li>
+									  <li class="page"><a href="http://lcamtuf.coredump.cx/electronics/">&raquo; Geek Electronics</a></li>
+									  <li class="page"><a href="http://dangerousprototypes.com/">&raquo; Open Hardware</a></li>
+									  <li class="page"><a href="http://hforsten.com/">&raquo; Hforsten</a></li>
+									  <li class="page"><a href="https://circuithub.com/">&raquo; Circuithub</a></li>
+									</ol>
+								</li>
+								<li>
+									<label for="mp" class="menu_label">Math/Physics <i class="icon-right-open"></i></label>
+									<input type="checkbox" id="mp" />
+									<ol class="tiny-links">
+										<li class="page"><a href="http://bulletphysics.org/wordpress/">&raquo; Bullet library</a></li>
+									  <li class="page"><a href="http://quantumfrontiers.com/">&raquo; Quantum Frontiers</a></li>
+									  <li class="page"><a href="https://iphys.wordpress.com/">&raquo; Numerical Sim blog</a></li>
+									  <li class="page"><a href="http://www.azimuthproject.org/azimuth/show/Azimuth+Project">&raquo; Azimuth project</a></li>
+									  <li class="page"><a href="http://www.dspguide.com/pdfbook.htm">&raquo; DSP guide</a></li>
+									  <li class="page"><a href="http://507movements.com/">&raquo; 507 Movements</a></li>
+									  <li class="page"><a href="http://projecteuclid.org/about">&raquo; Project Euclid</a></li>
+									  <li class="page"><a href="http://www.physicsbasedanimation.com/">&raquo; Animation physics</a></li>
+									  <li class="page"><a href="http://www.feynmanlectures.caltech.edu/">&raquo; Feynman lectures</a></li>
+									</ol>
+								</li>
+								<li>
+									<label for="gamedev" class="menu_label">Game Dev <i class="icon-right-open"></i></label>
+									<input type="checkbox" id="gamedev" />
+									<ol class="tiny-links">
+										<li class="page"><a href="https://handmadehero.org/">&raquo; Handmade Hero</a></li>
+									  <li class="page"><a href="https://docs.unrealengine.com/latest/INT/">&raquo; Unreal Engine docs</a></li>
+									  <li class="page"><a href="http://gamasutra.com/">&raquo; Gamasutra</a></li>
+									  <li class="page"><a href="http://gafferongames.com/">&raquo; Gaffer on Games<a>
+									  <li class="page"><a href="http://www-cs-students.stanford.edu/~amitp/gameprog.html">&raquo; Red Blob tuts</a></li>
+									  <li class="page"><a href="http://shaunlebron.github.io/#!/projects">&raquo; Shaun LeBron</a></li>
+									  <li class="page"><a href="http://www.voxelquest.com/">&raquo; VoxelQuest</a></li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+				</ul>
+				<!-- BLOCK QUOTE GOES HERE -->
+			</nav>
+			<main>
+				<div class="flex-container">
+					<div class="flex-content">
+
+<ul class="posts">
+        <li>
+          <article>
+            <header>
+              <h1>Mathjax and code-highlighting test</h1>
+              <div class="post-meta">
+                <time class="post-time" datetime="Tue Mar 17 2015 20:00:00 GMT-0400 (EDT)" pubdate>17 March 2015</time>
+                <div class="post-tags">
+                  test
+                </div>
+              </div>
+            </header>
+            The Gamma function satisfying \(\Gamma(n) = (n-1)!\quad\forall&#10;n\in\mathbb N\) is via through the Euler integral&#10;$$&#10;\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.&#10;$$
+            <footer>
+              <div class="read-continue">
+                <a href="articles/2015-03-18-Code-highlighting-Mathjax">Continue reading</a>
+              </div>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h1>Design is a distracting hobby</h1>
+              <div class="post-meta">
+                <time class="post-time" datetime="Wed Feb 25 2015 19:00:00 GMT-0500 (EST)" pubdate>25 February 2015</time>
+                <div class="post-tags">
+                  meta | design
+                </div>
+              </div>
+            </header>
+            This post warrants a disclaimer: I have never once considered myself a designer; I have only the smallest quantity of &#34;artistic taste&#34;. This is said so as to dispel any presumptuous airs that may stink up what I am about to say.&#10;I have never had much occasion to think about visual design before this...
+            <footer>
+              <div class="read-continue">
+                <a href="articles/2015-02-26-Design-is-a-distracting-hobby">Continue reading</a>
+              </div>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article>
+            <header>
+              <h1>A blogging alter ego is born... Mr. Mundane</h1>
+              <div class="post-meta">
+                <time class="post-time" datetime="Tue Feb 24 2015 19:00:00 GMT-0500 (EST)" pubdate>24 February 2015</time>
+                <div class="post-tags">
+                  meta
+                </div>
+              </div>
+            </header>
+            Why am I going through the trouble of establishing a personal website? I asked myself this question many times over as I perused listings of today&#39;s most popular static site generators. Despite the likelihood my current enthusiasm will shrivel, and the rate of updates will become a dribble, I just...
+            <footer>
+              <div class="read-continue">
+                <a href="articles/2015-02-25-Mr-Mundane&#x27;s-Musings">Continue reading</a>
+              </div>
+            </footer>
+          </article>
+        </li>
+</ul>
+
+					</div>
+					<footer class="flex-footer">
+						Statically generated with <a href="http://www.metalsmith.io/">Metalsmith</a>. Hosted on <a href="https://pages.github.com/">Github Pages</a>. Created by <a href="/about/">Mike Rooney</a>. Licensed by <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+					</footer>
+				</div>
+			</main>
+			<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		</div>
+	</body>
+</html>
